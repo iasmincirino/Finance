@@ -1,0 +1,120 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    font-family: sans-serif;
+}
+
+nav{
+    height: 80px;
+    width: 100%;
+    background: #54a3b1;
+    position: fixed;
+    z-index: 2;
+}
+
+label.logo{
+    font-size: 35px;
+    font-weight: bold;
+    color: #fff;
+    padding: 0 80px;
+    line-height: 80px;
+    font-family: 'Dancing Script', cursive;
+}
+
+nav ul{
+    float: right;
+    margin-right: 40px;
+}
+
+nav li{
+    display: inline-block;
+    margin: 0 8px;
+    line-height: 80px;
+}
+
+nav a{
+    color: #fff;
+    font-size: 18px;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+a:hover{
+    color: #104581;
+    transition: .5s;
+}
+
+nav #icon{
+    color: #fff;
+    font-size: 30px;
+    line-height: 80px;
+    float: right;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+
+.logar{
+    text-align: center;
+    background: #54a3b1;
+    padding: 10px 25px;
+    color: #fff;
+    border-radius: 20px;
+    margin-right: 10px;
+    border: solid 1px #fff;
+}
+
+.logar:hover{
+    background: #54a3b1f3;
+    cursor: pointer;
+    color: #fff;
+}
+
+@media (max-width: 1048px){
+    label.logo{
+        font-size: 20px;
+        padding: 0 50px;
+    }
+
+    nav ul{
+        margin-right: 20px;
+    }
+
+    nav a{
+        font-size: 17px;
+    }
+}
+
+@media (max-width: 909px){
+    nav #icon{
+        display: block;
+    }
+
+    nav ul{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: #66b3c1c4;
+        top: 80px;
+        left: -100%;
+        text-align: center;
+        transition: .5s;
+    }
+
+    nav li{
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+
+    nav a{
+        font-size: 20px;
+    }
+
+    nav ul.show{
+        left: 0;
+    }
+}

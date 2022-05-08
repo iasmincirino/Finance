@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Icons-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+    <!--CSS-Nav-->
+    <link rel="stylesheet" 
+    href="style/nav.css">
+    <!--CSS-Home-->
+    <link rel="stylesheet" 
+    href="style/home.css">
+     <!--CSS-Sobre EDU-FINA-->
+     <link rel="stylesheet" href="style/eduf.css">
+    <title>Educação Financeira</title>
+</head>
+<body>
+    <!--Navbar-->
+  <nav>
+    <label class="logo">Finança</label>
+      <ul>
+        <li><a href="#home">Início</a></li>
+        <li><a href="#sobre">Sobre</a></li>
+        <li><a href="#">Dicas</a></li>
+        <li><a href="#">Gráficos</a></li>
+        <li><a href="#">Contato</a></li>
+        <li><a href="login.html" class="logar">Login</a></li>
+      </ul>
+      <label id="icon">
+        <i class="fa fa-bars"></i>
+      </label>
+  </nav>
+  <!--Home-->
+  <section class="background" id="home">
+    <div class="home">
+      <h1>O risco vem de você não saber o que está fazendo.<br> Controle o seu dinheiro.</h1>
+    </div>
+  </section>
+  <!--O que é educação financeira?-->
+  <div class="edu" id="sobre">
+    <h2>O que é Educação Financeira?</h2>
+    <div class="imgEdu">
+      <img src="img/duvidaEDF.svg" alt="Educação Financeira" class="imgFinan">
+    </div>
+    <div class="txtSobre">
+      <p>A educação financeira vai muito além de aprender a economizar, cortar gastos desnecessários, poupar e acumular quantias em dinheiro. 
+      </p>
+      <br>
+      <p>Ser educado financeiramente faz com que qualquer pessoa passe a buscar uma qualidade de vida melhor, além de proporcionar a segurança material necessária para aproveitar os prazeres da vida e obter uma garantia para eventuais imprevistos.
+      </p>
+      <br>
+      <p>Infelizmente, no Brasil, a educação financeira ainda está longe de alcançar um patamar necessário, especialmente quando comparamos o cenário local com o de países desenvolvidos.</p>
+      <br>
+      <p>O endividamento da população tem aumentado cada vez mais, principalmente com a chegada da pandemia do COVID-19. Em abril de 2022, a Confederação Nacional do Comércio de Bens, Serviços e Turismo - CNC, divulgou que 77% das famílias estão endividadas.
+      </p>
+    </div>
+  </div>
+
+<!--jQuery Navbar-->
+<script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+<script>
+    $(document).ready(function(){
+    $('#icon').click(function(){
+      $('ul').toggleClass('show');
+      });
+  });
+</script>
+</body>
+</html>
