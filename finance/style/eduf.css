@@ -1,9 +1,9 @@
 body{
-    background: #d0e8ec;
+    background: #e6f4f7;
 }
 
 .edu{
-    width: 100%;
+    width: 80%;
     min-height: 200px;
     max-width: 100%;
     margin: 1rem auto;
@@ -11,12 +11,15 @@ body{
     position: relative;
     z-index: 1;
     display: table;
+    padding-top: 10px;
+    background: #d0e8ec;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.253);
 }
 
 .edu h2{
     color: #3b668f;
     font-family: 'Dancing Script', sans-serif;
-    padding-left: 50px;
+    padding-left: 30px;
     font-size: 30px;
 }
 
@@ -33,24 +36,24 @@ body{
 }
 
 .txtSobre{
-    font-size: 18px;
+    font-size: 15px;
     color: #0a2b49;
     display: table-cell;
     float: left;
-    width: 800px;
-    padding-left: 13px;
+    width: 500px;
+    padding: 15px;
     font-family: sans-serif;
 }
 
 @media (max-width: 800px){
 
     .edu{
-        max-width: 100%;
+        max-width: 70%;
         padding-right: 0;
     }
 
     .edu h2{
-        padding: 20px;
+        padding: 10px;
     }
 
     .imgFinan{
@@ -58,7 +61,7 @@ body{
     }
 
     .txtSobre{
-        width: 300px;
+        width: 330px;
         font-size: 15px;
     }
 }

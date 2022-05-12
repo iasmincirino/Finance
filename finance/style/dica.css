@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+
+.titulo{
+    background: #d0e8ec;
+}
+
+.titleDica{
+    color: #3b668f;
+    text-align: center;
+    padding-top: 10px;
+    font-size: 40px;
+    font-family: 'Dancing Script', sans-serif;
+    text-shadow: 1.5px 1px rgb(0, 0, 0);
+}
+
+
+.slider{
+  max-width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  background: #d0e8ec;
+  padding-top: 30px;
+  padding-bottom: 50px;
+}
+
+.slider .card{
+  flex: 1;
+  margin: 0 10px;
+  background: #fff;
+  align-items: center;
+  border-radius: 20px;
+}
+
+.slider .card .img{
+  height: 150px;
+  width: 100%;
+}
+
+.slider .card .img img{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+
+.slider .card .content{
+  padding: 10px 20px;
+}
+
+.card .content .title{
+  font-size: 25px;
+  font-weight: 600;
+  font-family: 'Dancing Script', cursive;
+  color: #3b668f;
+}
+  
+.card .content p{
+  font-family: Poppins, sans-serif;
+}
+
+@media (max-width: 750px){
+    .slider .card{
+    margin-top: 15px;
+    }
+
+    .titleDica{
+        font-size: 30px;
+    }
+}
