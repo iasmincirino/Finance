@@ -1,0 +1,78 @@
+header {
+    background: #54a3b1;
+    background-image: linear-gradient(180deg, #54a3b1);
+    padding: 24rem 0 9rem;
+    text-align: center;
+}
+
+.logo{
+    color: #fff;
+}
+
+header.animated {
+    animation: headerAnimation .4s 0s;
+    -webkit-animation: headerAnimation .4s 0s;
+    transition: .2s;
+    -webkit-transition: .2s;
+    -moz-transition: .2s;
+    -ms-transition: .2s;
+    -o-transition: .2s;
+}
+
+header.animated>div,
+header.animated>img {
+    animation: opacityAnimation .5s .2s;
+    -webkit-animation: opacityAnimation .5s .2s;
+}
+
+#swithTheme {
+    height: 20px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    position: relative;
+    right: 10px;
+    margin-top: -22rem;
+}
+
+.light:hover {
+    animation: infinite 5s light;
+    cursor: pointer;
+    -webkit-animation: infinite 5s light;
+}
+
+.light {
+    position: relative;
+    left: -10px;
+    animation: forwards 5s light;
+    -webkit-animation: forwards 5s light;
+}
+
+.light.off {
+    display: none;
+    transition: .5s;
+    -webkit-transition: .5s;
+    -moz-transition: .5s;
+    -ms-transition: .5s;
+    -o-transition: .5s;
+}
+
+.dark:hover {
+    animation: infinite 5s dark;
+    cursor: pointer;
+}
+
+.dark {
+    position: relative;
+    left: -10px;
+    animation: forwards 5s dark;
+}
+
+.dark.off {
+    display: none;
+    transition: .5s;
+    -webkit-transition: .5s;
+    -moz-transition: .5s;
+    -ms-transition: .5s;
+    -o-transition: .5s;
+}

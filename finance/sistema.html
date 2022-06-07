@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!--Fonts-->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap" rel="stylesheet">
+
+    <!--CSS-->
+    <link rel="stylesheet" href="/estilo/painel.css">
+    <link rel="stylesheet" href="/estilo/header.css">
+    <link rel="stylesheet" href="/estilo/balance.css">
+    <link rel="stylesheet" href="/estilo/table.css">
+    <link rel="stylesheet" href="/estilo/modal.css">
+    <link rel="stylesheet" href="/estilo/form.css">
+    <link rel="stylesheet" href="/estilo/message.css">
+    <link rel="stylesheet" href="/estilo/error.css">
+    <link rel="stylesheet" href="/estilo/animation.css">
+    <link rel="stylesheet" href="/estilo/desktop.css">
+    <title>Sistema Financeiro</title>
+    <link rel="shortcut icon" href="img/icon.png" type="image/x-icon">
+</head>
+<body>
+    <header class="animated">
+        <div id="swithTheme"></div>
+        <h1 class="logo">Finanças</h1>
+    </header
+    <main class="container">
+        <section id="balance">
+            <h2 class="hide">Balanço</h2>
+
+            <div class="card animated" style="--delay:1;">
+                <h3>
+                    <span>Entradas</span>
+                    <img src="/assets/income.svg" alt="Imagem de entradas">
+                </h3>
+                <p id="cardIncome">R$ 0,00</p>
+            </div>
+
+            <div class="card animated" style="--delay:2;">
+                <h3>
+                    <span>Saída</span>
+                    <img src="/assets/expense.svg" alt="Imagem de saidas">
+                </h3>
+                <p id="cardExpense">R$ 0,00</p>
+            </div>
+
+            <div class="card animated total" style="--delay:3;">
+                <h3>
+                    <span>Total</span>
+                    <img src="/assets/total.svg" alt="Imagem do total">
+                </h3>
+                <p id="cardTotal">R$ 0,00</p>
+            </div>
+        </section>
+
+        <section id="transactions" class="transaction animated">
+            <h2 class="hide">Transações</h2>
+            <a href="#" class="new button">+ Nova transação</a>
+            <table id="data-table">
+                <thead>
+                    <tr>
+                        <th>Descrição</th>
+                        <th>Valor</th>
+                        <th>Data</th>
+                        <th><img src="./assets/editIcon.svg"></th>
+                        <th><img src="./assets/trash.svg" alt="exclua uma transação"></th>
+                    </tr>
+                </thead>
+                <tbody>
+
+                </tbody>
+            </table>
+        </section>
+        <div id="newTransaction">
+            <div class="before">
+                <div class="newTransaction">
+                    <img class="newTransactionImg" src="./assets/plusButton.svg" alt="Adicionar transação">
+                </div>
+            </div>
+        </div>
+    </main>
+    <div class="modal-overlay">
+        <div class="modal">
+            <form id="form">
+                <h2>Nova transação</h2>
+                <div class="input-group">
+                    <label class="sr-only" for="description">Descrição</label>
+                    <input type="text" name="description" class="border" id="description" placeholder="Ex: Aluguel">
+                </div>
+                <div class="input-group">
+                    <label class="sr-only" for="amount">Valor</label>
+                    <input type="number" step="0.01" name="amount" class="border" id="amount" placeholder="Ex: R$ 500,00">
+                    <p>Por favor, digite somente números e use vírgula (,) para casas decimais!</p>
+                </div>
+                <div class="input-group">
+                    <p class="transaction-type">Tipo de transação:</p>
+                    <input type="radio" id="income" name="transaction-type" value="income">
+                    <label for="income">Entrada</label></br>
+                    <input type="radio" id="expense" name="transaction-type" value="expense" required>
+                    <label for="expense">Saída</label>
+                </div>
+                <div class="input-group">
+                    <label class="sr-only" for="date">Data</label>
+                    <input type="date" name="date" class="border" id="date" placeholder="01/01/2021">
+                </div>
+
+                <div class="input-group actions">
+                    <a href="#" class="button cancel">Cancelar</a>
+                    <button>Enviar</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <div class="layerMensage">
+        <div class="mensage">
+            <p>&#10077Pense bem no que vai gastar, <br> porque, tem pessoas, que,<br> quando recebem dinheiro,<br> usam em tantas besteiras!</p>
+            <p>
+                <a href="https://www.pensador.com/autor/beatriz/" target="_blanck">Beatriz</a>
+            </p>
+            <p>clique na tela para sair!</p>
+        </div>
+    </div>
+    <div class="error">
+        <span></span>
+    </div>
+    
+    <script src="./scripts/bundle.js"></script>
+</body>
+</html>

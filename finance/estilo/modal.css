@@ -1,0 +1,123 @@
+.modal-overlay,
+.layerMensage {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    background-color: #000000b3;
+    top: 700px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 999;
+    transition: 1s;
+    -webkit-transition: 1s;
+    -moz-transition: 1s;
+    -ms-transition: 1s;
+    -o-transition: 1s;
+}
+
+.modal-overlay.active,
+.layerMensage.active {
+    opacity: 1;
+    visibility: visible;
+    top: 0px;
+}
+
+.modal {
+    background: #f0f2f5;
+    padding: 2.4rem;
+    width: 90%;
+    max-width: 500px;
+    position: relative;
+    z-index: 1;
+}
+
+a {
+    color: #54a3b1;
+    text-decoration: none;
+    visibility: visible;
+}
+
+a:hover {
+    transform: translateX(10px) translateY(-8px);
+    color: #ffffff;
+    -webkit-transform: translateX(10px) translateY(-8px);
+    -moz-transform: translateX(10px) translateY(-8px);
+    -ms-transform: translateX(10px) translateY(-8px);
+    -o-transform: translateX(10px) translateY(-8px);
+}
+
+button {
+    margin: 0 0 0 .5rem;
+    width: 100%;
+    height: 50px;
+    border: none;
+    font-weight: 700;
+    background: #26c568;
+    color: #ffffff;
+    padding: 0;
+    border-radius: .5rem;
+    cursor: pointer;
+    opacity: .8;
+    -webkit-border-radius: .5rem;
+    -moz-border-radius: .5rem;
+    -ms-border-radius: .5rem;
+    -o-border-radius: .5rem;
+}
+
+button:hover {
+    background: linear-gradient(10deg, #328b50 15%, #31e67c 67%, #00fb69 97%);
+    color: #fff;
+    transition: .8s;
+    transform: translateX(10px) translateY(-8px);
+    opacity: 1;
+    -webkit-transform: translateX(10px) translateY(-8px);
+    -moz-transform: translateX(10px) translateY(-8px);
+    -ms-transform: translateX(10px) translateY(-8px);
+    -o-transform: translateX(10px) translateY(-8px);
+    -webkit-transition: .8s;
+    -moz-transition: .8s;
+    -ms-transition: .8s;
+    -o-transition: .8s;
+}
+
+a.button.cancel,
+a.button.cancel.in-modal {
+    margin: 0 .5rem 0 0;
+    width: 100%;
+    color: #ffffff;
+    font-weight: 700;
+    background: #f92121;
+    background: radial-gradient(circle, #f92121 96%, #9a1c38 100%);
+    border-radius: .5rem;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: .9;
+    visibility: visible;
+    transition: .8s;
+    -webkit-border-radius: .5rem;
+    -moz-border-radius: .5rem;
+    -ms-border-radius: .5rem;
+    -o-border-radius: .5rem;
+    -webkit-transition: .8s;
+    -moz-transition: .8s;
+    -ms-transition: .8s;
+    -o-transition: .8s;
+}
+
+a.button.cancel:hover,
+a.button.cancel.in-modal:hover {
+    opacity: 1;
+    background: radial-gradient(circle, #fa1b1b 45%, #ac1234 100%);
+    color: white;
+    transform: translateX(10px) translateY(-8px);
+    color: #ffffff;
+    -webkit-transform: translateX(10px) translateY(-8px);
+    -moz-transform: translateX(10px) translateY(-8px);
+    -ms-transform: translateX(10px) translateY(-8px);
+    -o-transform: translateX(10px) translateY(-8px);
+}

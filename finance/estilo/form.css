@@ -1,0 +1,77 @@
+#form {
+    max-width: 500px;
+    line-height: 2rem;
+}
+
+#form h2 {
+    margin-top: 0;
+}
+
+#form p {
+    opacity: .7;
+    font-size: 14px;
+}
+
+input {
+    border: 1px solid transparent;
+    border-radius: 0.2rem;
+    padding: 0.8rem;
+    width: 100%;
+}
+
+input:hover {
+    border-radius: .5rem;
+    border-image: linear-gradient(225deg, #FF3CAC 0%, #784BA0 50%, #2B86C5 100%);
+    border-image-slice: 1;
+    box-shadow: .9px .9px .9rem #c4c4c4cb;
+    -webkit-border-radius: .5rem;
+    -moz-border-radius: .5rem;
+    -ms-border-radius: .5rem;
+    -o-border-radius: .5rem;
+}
+
+input:focus {
+    outline: 0;
+    border: 2px solid transparent;
+    border-radius: .5rem;
+    border-image: linear-gradient(25deg, #FF3CAC 0%, #784BA0 50%, #2B86C5 100%);
+    border-image-slice: 1;
+    -webkit-border-radius: .5rem;
+    -moz-border-radius: .5rem;
+    -ms-border-radius: .5rem;
+    -o-border-radius: .5rem;
+}
+
+.border.red {
+    border: 1px solid transparent;
+    border-image: linear-gradient(200deg, #e41e1e 0%, #a01d1d 82.8%);
+    border-image-slice: 1;
+}
+
+.input-group.actions {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.input-group {
+    margin-top: 0.8rem;
+}
+
+.input-group small.help {
+    opacity: 0.4;
+}
+
+.transaction-type {
+    font-size: 93.75%;
+    font-weight: 500;
+}
+
+.transaction-type~input {
+    width: 20px;
+    height: 15px;
+}
+
+.transaction-type~label {
+    font-size: 1.1rem;
+}

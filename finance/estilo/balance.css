@@ -1,0 +1,83 @@
+.hide {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border-width: 0;
+}
+
+#balance {
+    margin-top: -26rem;
+}
+
+#balance h2 {
+    color: #fff;
+    margin-top: 0;
+}
+
+h2 {
+    margin: 3.8rem 0 .8rem 0;
+    color: #363F5F;
+    font-weight: 400;
+}
+
+.card {
+    background: #fff;
+    padding: 1.5rem;
+    margin-bottom: 2rem;
+    border-radius: .8rem;
+    -webkit-border-radius: .8rem;
+    -moz-border-radius: .8rem;
+    -ms-border-radius: .8rem;
+    -o-border-radius: .8rem;
+    transition: .4s;
+    -webkit-transition: .4s;
+    -moz-transition: .4s;
+    -ms-transition: .4s;
+    -o-transition: .4s;
+}
+
+.card:hover {
+    transform: translateX(15px) translateY(-8px);
+    box-shadow: -5px 6px 20px black;
+    -webkit-transform: translateX(15px) translateY(-8px);
+    -moz-transform: translateX(15px) translateY(-8px);
+    -ms-transform: translateX(15px) translateY(-8px);
+    -o-transform: translateX(15px) translateY(-8px);
+}
+
+.card h3 {
+    font-weight: 400;
+    font-size: 1.2rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.card p {
+    font-size: 1.8rem;
+    line-height: 2rem;
+}
+
+.card.total {
+    background: #45919e;
+    background-image: linear-gradient(15deg, #328b8b 25%);
+    color: #fff;
+}
+
+.card.total.changeColor {
+    background: #f92121;
+    background: radial-gradient(circle, #f92121 45%, #9a1c38 95%);
+    color: #fff;
+}
+
+.card.animated {
+    opacity: 0;
+    animation: cardPop cubic-bezier(0.39, 0.58, 0.57, 1) forwards;
+    -webkit-animation: cardPop cubic-bezier(0.39, 0.58, 0.57, 1) forwards;
+    animation-duration: 1s;
+    animation-delay: calc(.2s * var(--delay));
+}

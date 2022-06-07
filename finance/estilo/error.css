@@ -1,0 +1,38 @@
+.error.active {
+    top: -43rem;
+    opacity: 1;
+    visibility: visible;
+}
+
+.error {
+    width: 90vw;
+    height: 100%;
+    margin: 0 auto;
+    position: relative;
+    top: -900px;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 9999;
+    transition: .5s;
+    -webkit-transition: .5s;
+    -moz-transition: .5s;
+    -ms-transition: .5s;
+    -o-transition: .5s;
+}
+
+.error span {
+    font-size: 18px;
+    padding: 2.5rem 1.2rem;
+    color: white;
+    background-color: red;
+    border: 0;
+    border-radius: .5rem;
+    -webkit-border-radius: .5rem;
+    -moz-border-radius: .5rem;
+    -ms-border-radius: .5rem;
+    -o-border-radius: .5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}

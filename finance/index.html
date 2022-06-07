@@ -16,7 +16,12 @@
      <link rel="stylesheet" href="style/eduf.css">
       <!--CSS-Dicas-->
     <link rel="stylesheet" href="style/dica.css">
+    <!--CSS-Índices-->
+    <link rel="stylesheet" href="style/indice.css">
+    <!--CSS-Footer-->
+    <link rel="stylesheet" href="style/footer.css">
     <title>Educação Financeira</title>
+    <link rel="shortcut icon" href="img/icon.png" type="image/x-icon">
 </head>
 <body>
     <!--Navbar-->
@@ -26,8 +31,8 @@
         <li><a href="#home">Início</a></li>
         <li><a href="#sobre">Sobre</a></li>
         <li><a href="#dicas">Dicas</a></li>
-        <li><a href="#">Gráficos</a></li>
-        <li><a href="#">Contato</a></li>
+        <li><a href="#indice">Gráficos</a></li>
+        <li><a href="#footer">Contato</a></li>
         <li><a href="login.html" class="logar">Login</a></li>
       </ul>
       <label id="icon">
@@ -112,7 +117,78 @@
 </div>
 
   <!--Índices-->
-
+  <main id="indice">
+    <h1>Índices da Situação Financeira dos Brasileiros</h1>
+    <div class="gallery-container">
+      <a href="img/endividamento.jpg" class="gallery-items">
+        <img src="img/endividamento.jpg" alt="endividamento">
+      </a>
+      <a href="img/dividas.png" class="gallery-items">
+          <img src="img/dividas.png" alt="dívidas">
+      </a>
+      <a href="img/renda.png" class="gallery-items">
+          <img src="img/renda.png" alt="renda">
+      </a>
+    </div>        
+  </main>
+  <!--Footer-->
+<footer id="footer">
+  <div class="main-content">
+    <div class="left box">
+      <h2>Sobre</h2>
+      <div class="content">
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Expedita dolor totam accusamus dolorem voluptatem minus hic eligendi illum eius, perferendis nulla ipsam, eaque consequuntur pariatur alias autem! Tenetur, fugiat tempora.</p>
+        <div class="social">
+          <a href="#"><span class="fab fa-facebook-f"></span></a>
+          <a href="#" target="_blank" rel="external"><span class="fab fa-twitter"></span></a>
+          <a href="#"  target="_blank" rel="external"><span class="fab fa-instagram"></span></a>
+          <a href="#" target="_blank" rel="external"><span class="fab fa-youtube"></span></a>
+        </div>
+      </div>
+    </div>
+    <div class="center box">
+      <h2>Localização</h2>
+      <div class="content">
+        <div class="place">
+          <span class="fas fa-map-marker-alt"></span>
+          <span class="text">Capivari, São Paulo</span>
+        </div>
+        <div class="phone">
+          <span class="fas fa-phone-alt"></span>
+          <span class="text">(99) 9999-9999</span>
+        </div>
+        <div class="email">
+          <span class="fas fa-envelope"></span>
+          <span class="text">ifspcapivari@gmail.com</span>
+        </div>
+      </div>
+    </div>
+    <div class="right box">
+      <h2>Contato</h2>
+      <div class="content">
+        <form action="#">
+          <div class="email">
+            <div class="text">Email:</div>
+            <input type="email" required>
+          </div>
+          <div class="msg">
+            <div class="text">Mensagem: </div>
+            <textarea rows="2" cols="25" required></textarea>
+          </div>
+          <div class="btn">
+            <button type="submit">Enviar</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+  <div class="bottom">
+    <center>
+      <span class="credit">Criado pela Iasmin e Êmily | </span>
+      <span class="far fa-copyright"></span><span> 2022 All rights reserved.</span>
+    </center>
+  </div>
+</footer>
 <!--jQuery Navbar-->
 <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
 <script>
