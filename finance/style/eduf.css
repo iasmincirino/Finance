@@ -2,6 +2,10 @@ body{
     background: #e6f4f7;
 }
 
+.edu_sobre{
+    padding: 50px;
+}
+
 .edu{
     width: 80%;
     min-height: 200px;
@@ -70,5 +74,13 @@ body{
     .txtSobre{
         width: 200px;
         font-size: 15px;
+    }
+}
+
+@media (max-width: 500px){
+    .edu_sobre{
+        padding-top: 40px;
+        padding-left: 0;
+        padding-right: 0;
     }
 }

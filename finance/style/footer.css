@@ -46,15 +46,15 @@ footer{
     text-align: justify;
 }
 
-.left .content .social{
+.left .content {
     margin: 20px 0 0 0;
 }
 
-.left .content .social a{
+.left .content a{
     padding: 0 2px;
 }
 
-.left .content .social a span{
+.left .content a span{
     height: 40px;
     width: 40px;
     background: #1a1a1a;

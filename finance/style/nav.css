@@ -43,7 +43,7 @@ nav a{
 }
 
 a:hover{
-    color: #104581;
+    color: #205d68;
     transition: .5s;
 }
 
@@ -68,7 +68,7 @@ nav #icon{
 }
 
 .logar:hover{
-    background: #19579e;
+    background: #205d68;
     cursor: pointer;
     color: #fff;
 }
